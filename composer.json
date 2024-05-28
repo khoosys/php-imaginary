@@ -1,5 +1,5 @@
 {
-  "name": "tigroid3/php-imaginary",
+  "name": "khoosys/php-imaginary",
   "type": "library",
   "license": "BSD-3-Clause",
   "description": "SDK for https://github.com/h2non/imaginary",
@@ -9,12 +9,12 @@
     "h2non",
     "php"
   ],
-  "homepage": "https://github.com/tigroid3/php-imaginary",
+  "homepage": "https://github.com/khoosys/php-imaginary",
   "authors": [
     {
-      "name": "Oleg Kretinin",
+      "name": "Stephen Khoo",
       "role": "Maintainer",
-      "email": "sarge_tigra@mail.ru"
+      "email": "stephen@khoosys.net"
     }
   ],
   "require": {
@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "tigroid3\\phpimaginary\\": "src"
+      "khoosys\\phpimaginary\\": "src"
     }
   }
 }
