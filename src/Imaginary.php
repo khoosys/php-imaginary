@@ -21,7 +21,7 @@ class Imaginary
     /**
      * @var string API authentication key
      */
-    private key = '';
+    private $key = '';
 
     /**
      * @var string Uploaded uploadFilePath
