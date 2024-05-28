@@ -1,7 +1,6 @@
 {
   "name": "tigroid3/php-imaginary",
   "type": "library",
-  "version": "1.04",
   "license": "BSD-3-Clause",
   "description": "SDK for https://github.com/h2non/imaginary",
   "keywords": [
@@ -19,7 +18,6 @@
     }
   ],
   "require": {
-    "tigroid3/php-imaginary": "^1.03",
     "php": ">=7.0",
     "ext-json": "*",
     "guzzlehttp/guzzle": ">=6.0"
