@@ -19,6 +19,11 @@ class Imaginary
     public const FORMAT_WEBP = 'webp';
 
     /**
+     * @var string API authentication key
+     */
+    private key = '';
+
+    /**
      * @var string Uploaded uploadFilePath
      */
     private $uploadFilePath = '';
@@ -35,6 +40,16 @@ class Imaginary
         return new self();
     }
 
+    /**
+     * @param string $setKey
+     * @return \tigroid3\phpimaginary\Imaginary
+     */
+    public function setKey(string $key): self
+    {
+        $this->key = $key;
+        return $this;
+    }
+    
     /**
      * @param string $uploadFilePath
      * @return \tigroid3\phpimaginary\Imaginary
@@ -380,6 +395,6 @@ class Imaginary
         $client = new ImaginaryClient();
         $client->setUploadFilePath($this->uploadFilePath);
 
-        return $client->send($method, ['operations' => json_encode($this->operations)]);
+        return $client->send($method, ['key'=>$this->key, 'operations' => json_encode($this->operations)]);
     }
 }
